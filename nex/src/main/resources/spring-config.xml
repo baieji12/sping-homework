@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="shitang" class="com.gxy.pojo.Shitang">
+        <property name="customer">
+            <bean class="com.gxy.pojo.Customer">
+                <property name="student" ref="student"/>
+                <property name="teacher" ref="teacher"/>
+            </bean>
+        </property>
+    </bean>
+    <bean id="student" class="com.gxy.pojo.Student"><property name="name" value="student"/> </bean>
+    <bean id="teacher" class="com.gxy.pojo.Teacher"><property name="name" value="teacher"/> </bean>
+</beans>
