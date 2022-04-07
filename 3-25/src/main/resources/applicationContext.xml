@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="teacher" class="com.gxy.pojo.Teacher">
+        <property name="name" value="zhang san"/>
+        <property name="salary">
+            <array>
+                <value>3233.56</value>
+                <value>2998.00</value>
+            </array>
+        </property>
+        <property name="student">
+            <list>
+                <value>sss</value>
+                <value>ddd</value>
+                <value>ccc</value>
+                <value>fff</value>
+            </list>
+        </property>
+        <property name="info">
+            <map>
+                <entry key="sex" value="man"/>
+                <entry key="birthday" value="2002.2.2"/>
+                <entry key="joinTime" value="2024.01.01"/>
+                <entry key="address" value="chengdu"/>
+                <entry key="email"   value="1000333@qq.com"/>
+            </map>
+        </property>
+        <property name="key">
+            <set>
+                <value>sex</value>
+                <value>birthday</value>
+                <value>joinTime</value>
+                <value>address</value>
+                <value>email</value>
+
+            </set>
+        </property>
+    </bean>
+</beans>
