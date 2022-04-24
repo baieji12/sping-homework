@@ -11,6 +11,7 @@
     <modules>
         <module>nex</module>
         <module>3-25</module>
+        <module>4-18</module>
     </modules>
 
     <properties>

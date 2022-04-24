@@ -1,5 +1,7 @@
 package com.gxy.pojo;
 
+import org.springframework.web.bind.annotation.RequestMapping;
+
 public class Customer {
     private Student student;
     private Teacher teacher;
@@ -28,4 +30,7 @@ public class Customer {
     public void setTeacher(Teacher teacher) {
         this.teacher = teacher;
     }
+    @RequestMapping(value = "login.do")
+    <init-parm>
+
 }
